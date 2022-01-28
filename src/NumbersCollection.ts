@@ -1,7 +1,7 @@
 export class NumbersCollection {   
    constructor(public data: number[]) {}
 
-   length(): number {
+   get length(): number {
       return this.data.length;
    }
    
@@ -15,4 +15,3 @@ export class NumbersCollection {
       this.data[rightIndex] = lefHand;
    }
 }
-

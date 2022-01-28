@@ -5,7 +5,7 @@ class NumbersCollection {
     constructor(data) {
         this.data = data;
     }
-    length() {
+    get length() {
         return this.data.length;
     }
     compare(leftIndex, rightIndex) {
