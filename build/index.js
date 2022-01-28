@@ -1,27 +1,6 @@
 "use strict";
-class Sorter {
-    constructor(collection) {
-        this.collection = collection;
-    }
-    sort() {
-        const { length } = this.collection;
-        for (let i = 0; i < length; i++) {
-            for (let j = 0; j < length - i - 1; j++) {
-                //If collection is an array of numbers
-                if (this.collection instanceof Array) { //collection === number[]
-                    if (this.collection[j] > this.collection[j + 1]) {
-                        const leftHand = this.collection[j];
-                        this.collection[j] = this.collection[j + 1];
-                        this.collection[j + 1] = leftHand;
-                    }
-                }
-                //If collection is a string, do this logic instead:
-                if (typeof this.collection === 'string') { //colletion === string
-                }
-            }
-        }
-    }
-}
-const sorte = new Sorter([10, 3, -5, 0]);
+Object.defineProperty(exports, "__esModule", { value: true });
+const Sorter_1 = require("./Sorter");
+const sorte = new Sorter_1.Sorter([10, 3, -5, 0]);
 sorte.sort();
 console.log(sorte.collection);
