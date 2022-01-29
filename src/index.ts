@@ -3,15 +3,15 @@ import { NumbersCollection } from "./NumbersCollection";
 import { CharactersCollection } from "./CharactersCollection";
 import { LinkedList } from "./LinkedList";
 
-/* const numberCollection = new NumbersCollection([100,3,-5,0]);
-const sorte = new Sorter(numberCollection);
-sorte.sort();
-console.log(numberCollection.data); */
 
-/* const charactersCollection = new CharactersCollection('XaayB');
-const sorter = new Sorter(charactersCollection);
-sorter.sort();
-console.log(charactersCollection.data); */
+
+const numberCollection = new NumbersCollection([100,3,-5,0]);
+numberCollection.sort();
+console.log(numberCollection.data);
+
+const charactersCollection = new CharactersCollection('XaayB');
+charactersCollection.sort();
+console.log(charactersCollection.data);
 
 const linkedList = new LinkedList();
 linkedList.add(500);
@@ -19,6 +19,5 @@ linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(-4);
 
-const sorter = new Sorter(linkedList);
-sorter.sort();
+linkedList.sort();
 linkedList.print();
